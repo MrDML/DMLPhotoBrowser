@@ -1,0 +1,16 @@
+PODS:
+  - DMLPhotoBrowser (0.1.0)
+
+DEPENDENCIES:
+  - DMLPhotoBrowser (from `../`)
+
+EXTERNAL SOURCES:
+  DMLPhotoBrowser:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DMLPhotoBrowser: da256f3f55fc2c1ea1a69592f93d6e3905805ce2
+
+PODFILE CHECKSUM: 1524f75876157c0577d3b89c2367393bb58fd72f
+
+COCOAPODS: 1.2.1
