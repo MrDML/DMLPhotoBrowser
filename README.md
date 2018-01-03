@@ -21,10 +21,11 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'DMLPhotoBrowser'
 ```
-<p>
+
+```
 Note that this framework relies on FLAnimatedImage and SDWebImage, and how do you use the demo
 (注意此框架依赖 FLAnimatedImage和SDWebImage，具体如何使用请查看demo)
-</p>
+```
 
 ## Author
 
