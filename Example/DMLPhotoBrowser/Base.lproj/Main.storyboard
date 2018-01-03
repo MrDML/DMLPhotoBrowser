@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="87f-fR-LPF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,23 +9,153 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <!--DMLPhotoBowser-->
+        <scene sceneID="mnC-jj-R5g">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="DMLViewController" sceneMemberID="viewController">
+                <viewController id="tHE-Bl-9CM" customClass="DMLViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="4CX-7e-APz"/>
+                        <viewControllerLayoutGuide type="bottom" id="vdm-us-YQ4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                    <view key="view" contentMode="scaleToFill" id="y5Z-Uz-CTr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTn-AS-Bki">
+                                <rect key="frame" x="132" y="164" width="111" height="34"/>
+                                <state key="normal" title="相册图片浏览">
+                                    <color key="titleColor" red="1" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gM3-QI-cKt" kind="show" id="eYC-0U-InF">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEl-4Y-ldd">
+                                <rect key="frame" x="131.5" y="218" width="111" height="34"/>
+                                <state key="normal" title="网络图片浏览">
+                                    <color key="titleColor" red="1" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cWc-YJ-oul" kind="show" id="7au-Qy-WlM">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQh-yB-upo">
+                                <rect key="frame" x="150" y="326" width="74" height="34"/>
+                                <state key="normal" title="清除缓存">
+                                    <color key="titleColor" red="1" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearPictureMemory:" destination="tHE-Bl-9CM" eventType="touchUpInside" id="k7d-5Y-aRz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3W-Oy-bcR">
+                                <rect key="frame" x="150" y="272" width="74" height="34"/>
+                                <state key="normal" title="仅有原图">
+                                    <color key="titleColor" red="1" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kz3-33-VVv" kind="show" id="h4F-y5-II7">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vTn-AS-Bki" firstAttribute="centerX" secondItem="y5Z-Uz-CTr" secondAttribute="centerX" id="CQL-4g-Ecd"/>
+                            <constraint firstItem="AEl-4Y-ldd" firstAttribute="centerX" secondItem="y5Z-Uz-CTr" secondAttribute="centerX" id="Ci6-F4-vOg"/>
+                            <constraint firstItem="X3W-Oy-bcR" firstAttribute="top" secondItem="AEl-4Y-ldd" secondAttribute="bottom" constant="20" id="RSI-GS-t6U"/>
+                            <constraint firstItem="vTn-AS-Bki" firstAttribute="top" secondItem="4CX-7e-APz" secondAttribute="bottom" constant="100" id="SU3-x3-fzK"/>
+                            <constraint firstItem="HQh-yB-upo" firstAttribute="centerX" secondItem="y5Z-Uz-CTr" secondAttribute="centerX" id="b5Q-DQ-Kx5"/>
+                            <constraint firstItem="HQh-yB-upo" firstAttribute="top" secondItem="X3W-Oy-bcR" secondAttribute="bottom" constant="20" id="buv-vb-pEo"/>
+                            <constraint firstItem="X3W-Oy-bcR" firstAttribute="centerX" secondItem="y5Z-Uz-CTr" secondAttribute="centerX" id="jJ4-ns-5Av"/>
+                            <constraint firstItem="AEl-4Y-ldd" firstAttribute="top" secondItem="vTn-AS-Bki" secondAttribute="bottom" constant="20" id="mb5-tv-YGd"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="DMLPhotoBowser" id="QYh-Bi-QDq"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTf-s5-uvX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="445.60000000000002" y="42.728635682158924"/>
+        </scene>
+        <!--相册图片浏览-->
+        <scene sceneID="4kd-Tc-k4a">
+            <objects>
+                <viewController id="gM3-QI-cKt" customClass="LocalShowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RS8-fc-ufl"/>
+                        <viewControllerLayoutGuide type="bottom" id="csu-il-ZAH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gpl-vO-mqN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="相册图片浏览" id="4yL-Uq-Gf3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C80-WG-Pq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="3"/>
+        </scene>
+        <!--仅有原图-->
+        <scene sceneID="3mN-cd-9Vs">
+            <objects>
+                <viewController id="kz3-33-VVv" customClass="OnlyOriginalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ITe-GP-3Qs"/>
+                        <viewControllerLayoutGuide type="bottom" id="aMF-gp-mDK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NCV-rH-lVB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仅有原图" id="jU6-nC-8fb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e06-Bf-BRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="985"/>
+        </scene>
+        <!--网络图片浏览-->
+        <scene sceneID="FSQ-hE-31y">
+            <objects>
+                <viewController id="cWc-YJ-oul" customClass="NetShowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1BQ-gy-O61"/>
+                        <viewControllerLayoutGuide type="bottom" id="y2k-w0-Rd4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kLw-8f-9iv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="网络图片浏览" id="OBT-Aw-KAE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mg6-1J-N9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="985"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qW1-nI-mK1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="87f-fR-LPF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pYc-y1-lOY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tHE-Bl-9CM" kind="relationship" relationship="rootViewController" id="ch5-Mu-6Xl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmB-MT-nHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="78"/>
         </scene>
     </scenes>
 </document>

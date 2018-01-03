@@ -56,10 +56,6 @@
             double progress = (double)receivedSize / expectedSize;
             strongSelf.progressLayer.hidden = NO;
             strongSelf.progressLayer.strokeEnd = MAX(progress, 0.01);
-            NSLog(@"当前线程===%@",[NSThread currentThread]);
-
-            NSLog(@"=progress : %f=",progress);
-            //[strongSelf.progressLayer startProgressAnimation];
         });
     };
     

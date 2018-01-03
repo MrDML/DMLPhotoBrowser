@@ -7,6 +7,7 @@
 //
 
 #import "DMLViewController.h"
+#import "SDWebImageManager.h"
 
 @interface DMLViewController ()
 
@@ -20,6 +21,13 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)clearPictureMemory:(UIButton *)sender {
+    
+    [[SDWebImageManager sharedManager].imageCache clearMemory];
+    [[SDWebImageManager sharedManager].imageCache clearDiskOnCompletion:nil];
+}
+
+    
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

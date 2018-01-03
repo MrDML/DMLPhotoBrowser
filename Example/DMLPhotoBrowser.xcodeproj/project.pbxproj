@@ -10,6 +10,9 @@
 		38FDCFCC3F32F57AC2D05BE6 /* Pods_DMLPhotoBrowser_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA6FD09D04D49FD706AA1D9 /* Pods_DMLPhotoBrowser_Tests.framework */; };
 		44ED30FA08EF872C92C64075 /* Pods_DMLPhotoBrowser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3768379FBA57BEB0B18F5E /* Pods_DMLPhotoBrowser_Example.framework */; };
 		486A002A1FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 486A00291FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m */; };
+		486A00321FFCA86A00B86929 /* LocalShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486A002D1FFCA86A00B86929 /* LocalShowViewController.m */; };
+		486A00331FFCA86A00B86929 /* NetShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486A002F1FFCA86A00B86929 /* NetShowViewController.m */; };
+		486A00341FFCA86A00B86929 /* OnlyOriginalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486A00311FFCA86A00B86929 /* OnlyOriginalViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -42,6 +45,12 @@
 		3A3768379FBA57BEB0B18F5E /* Pods_DMLPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMLPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		486A00281FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImageView+SD_WebCache.h"; sourceTree = "<group>"; };
 		486A00291FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImageView+SD_WebCache.m"; sourceTree = "<group>"; };
+		486A002C1FFCA86A00B86929 /* LocalShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalShowViewController.h; sourceTree = "<group>"; };
+		486A002D1FFCA86A00B86929 /* LocalShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalShowViewController.m; sourceTree = "<group>"; };
+		486A002E1FFCA86A00B86929 /* NetShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetShowViewController.h; sourceTree = "<group>"; };
+		486A002F1FFCA86A00B86929 /* NetShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetShowViewController.m; sourceTree = "<group>"; };
+		486A00301FFCA86A00B86929 /* OnlyOriginalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyOriginalViewController.h; sourceTree = "<group>"; };
+		486A00311FFCA86A00B86929 /* OnlyOriginalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlyOriginalViewController.m; sourceTree = "<group>"; };
 		4FA6FD09D04D49FD706AA1D9 /* Pods_DMLPhotoBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMLPhotoBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* DMLPhotoBrowser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMLPhotoBrowser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,6 +116,19 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		486A002B1FFCA86A00B86929 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				486A002C1FFCA86A00B86929 /* LocalShowViewController.h */,
+				486A002D1FFCA86A00B86929 /* LocalShowViewController.m */,
+				486A002E1FFCA86A00B86929 /* NetShowViewController.h */,
+				486A002F1FFCA86A00B86929 /* NetShowViewController.m */,
+				486A00301FFCA86A00B86929 /* OnlyOriginalViewController.h */,
+				486A00311FFCA86A00B86929 /* OnlyOriginalViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +166,7 @@
 		6003F593195388D20070C39A /* Example for DMLPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				486A002B1FFCA86A00B86929 /* Classes */,
 				486A00271FFCA2BD00B86929 /* Category */,
 				6003F59C195388D20070C39A /* DMLAppDelegate.h */,
 				6003F59D195388D20070C39A /* DMLAppDelegate.m */,
@@ -420,8 +443,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486A00321FFCA86A00B86929 /* LocalShowViewController.m in Sources */,
+				486A00341FFCA86A00B86929 /* OnlyOriginalViewController.m in Sources */,
 				6003F59E195388D20070C39A /* DMLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DMLViewController.m in Sources */,
+				486A00331FFCA86A00B86929 /* NetShowViewController.m in Sources */,
 				486A002A1FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
