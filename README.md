@@ -23,8 +23,9 @@ pod 'DMLPhotoBrowser'
 ```
 
 ## Use
-```
-(注意此框架依赖 FLAnimatedImage和SDWebImage，具体如何使用请查看demo)
+*注意此框架依赖 FLAnimatedImage和SDWebImage，下面是具体如何使用*
+<p>本地/相册图片浏览</p>
+<pre> 
     NSMutableArray *photoItems = [NSMutableArray array];
     int i = 0;
     for (UIImage *image in self.images) {
@@ -34,12 +35,22 @@ pod 'DMLPhotoBrowser'
         [photoItems addObject:item];
         i ++;
     }
-    
     DMLPhotoBrowser *Browser = [[DMLPhotoBrowser alloc] initWithPhotoItems:photoItems selectedIndex:imageView.tag];
-    
     [Browser showPhotoBrowser];
-
-```
+</pre>
+<p>网络图片浏览</p>
+<pre>
+    NSMutableArray *photoItems = [NSMutableArray array];
+    int i = 0;
+    for (NSString *url in self.originalURLs) { 
+        FLAnimatedImageView *imageViewSource = self.bgview.subviews[i];
+        DMLPhotoItem *item = [[DMLPhotoItem alloc] initWithSourceView:imageViewSource thumbImage:imageViewSource.image       imageUrl:[NSURL URLWithString:url]];
+        [photoItems addObject:item];
+        i ++;
+    }
+    DMLPhotoBrowser *Browser = [[DMLPhotoBrowser alloc] initWithPhotoItems:photoItems selectedIndex:imageView.tag];
+    [Browser showPhotoBrowser];
+</pre>
 
 ## Author
 
