@@ -9,7 +9,9 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Requirements&&demonstration
+![Demo](https://github.com/MrDML/DMLPhotoBrowser/blob/master/photo.gif)
+
 
 ## Installation
 
