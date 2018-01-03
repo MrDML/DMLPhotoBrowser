@@ -29,7 +29,6 @@ pod 'DMLPhotoBrowser'
     NSMutableArray *photoItems = [NSMutableArray array];
     int i = 0;
     for (UIImage *image in self.images) {
-        
         UIImageView *imageViewSource = self.bgview.subviews[i];
         DMLPhotoItem *item = [[DMLPhotoItem alloc] initWithSourceView:imageViewSource image:image];
         [photoItems addObject:item];
