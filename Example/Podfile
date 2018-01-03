@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DMLPhotoBrowser_Example' do
+  pod 'DMLPhotoBrowser', :path => '../'
+
+  target 'DMLPhotoBrowser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
