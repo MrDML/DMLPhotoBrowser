@@ -22,14 +22,28 @@ it, simply add the following line to your Podfile:
 pod 'DMLPhotoBrowser'
 ```
 
+## Use
 ```
-Note that this framework relies on FLAnimatedImage and SDWebImage, and how do you use the demo
 (注意此框架依赖 FLAnimatedImage和SDWebImage，具体如何使用请查看demo)
+    NSMutableArray *photoItems = [NSMutableArray array];
+    int i = 0;
+    for (UIImage *image in self.images) {
+        
+        UIImageView *imageViewSource = self.bgview.subviews[i];
+        DMLPhotoItem *item = [[DMLPhotoItem alloc] initWithSourceView:imageViewSource image:image];
+        [photoItems addObject:item];
+        i ++;
+    }
+    
+    DMLPhotoBrowser *Browser = [[DMLPhotoBrowser alloc] initWithPhotoItems:photoItems selectedIndex:imageView.tag];
+    
+    [Browser showPhotoBrowser];
+
 ```
 
 ## Author
 
-NickNAme:MrDML, E-Mail:dml1630@163.com, QQ:1969339388
+NickName:MrDML, E-Mail:dml1630@163.com, QQ:1969339388
 
 ## License
 
