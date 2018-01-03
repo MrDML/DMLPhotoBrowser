@@ -14,7 +14,6 @@
 		2759496EFFF59B9F624845CF1E0CF040 /* DMLPhotoBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA19F862E26AC610130B5D51EBCB214 /* DMLPhotoBrowser-dummy.m */; };
 		42AACF4B05A8AC57F3AAC8A93D77ED46 /* DMLPhotoBrowser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 942AC73D3A9B72A41F0FF37F915338D1 /* DMLPhotoBrowser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		592DA6482E4F4057A0AAFEAA1C0106AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		754BC7DF4F7BFD9DA329215EB93D4BB1 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0812B4B13F1EBC75449516A66D18780F /* ReplaceMe.m */; };
 		E234ED136105408543AC040B9B436D2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E6D99789BDAE393F6794A1EA8B218899 /* Pods-DMLPhotoBrowser_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B32CABA6BE92DE72A1090E4AFCD8877A /* Pods-DMLPhotoBrowser_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -30,10 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0812B4B13F1EBC75449516A66D18780F /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		1540C2AF9E07327CA84D5489A75F836B /* Pods-DMLPhotoBrowser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DMLPhotoBrowser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		219081198B216FCFA9080408508B174E /* Pods-DMLPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMLPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2875FA0C37B61B07CEDC612BD85CF324 /* DMLPhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DMLPhotoBrowser.framework; path = DMLPhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2875FA0C37B61B07CEDC612BD85CF324 /* DMLPhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DMLPhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D1AE7DCD3C06C977388123F76CC763 /* Pods-DMLPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMLPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3F8C0263BAED8F25C14C537D2D22B615 /* Pods-DMLPhotoBrowser_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DMLPhotoBrowser_Example-resources.sh"; sourceTree = "<group>"; };
 		48FB8182DDCDAD6FC9D917CDBEB34BE3 /* Pods-DMLPhotoBrowser_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DMLPhotoBrowser_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -42,23 +40,23 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		667F5CF4B56B52176D0D8716B577C768 /* DMLPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DMLPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
 		863A704985E990C912609ACC965DA28D /* Pods-DMLPhotoBrowser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DMLPhotoBrowser_Example-umbrella.h"; sourceTree = "<group>"; };
-		91100AEA9B44D9FC04DBBB1D41BFB45C /* Pods-DMLPhotoBrowser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DMLPhotoBrowser_Tests.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		91100AEA9B44D9FC04DBBB1D41BFB45C /* Pods-DMLPhotoBrowser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DMLPhotoBrowser_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		942AC73D3A9B72A41F0FF37F915338D1 /* DMLPhotoBrowser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DMLPhotoBrowser-umbrella.h"; sourceTree = "<group>"; };
 		96E9E17FF3FA82C792CF793B53DD312F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DBC12A6155BC99F469C07CB28072D66 /* Pods-DMLPhotoBrowser_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DMLPhotoBrowser_Tests-resources.sh"; sourceTree = "<group>"; };
 		9E63B430DE842AD15D6F5499F5381FB8 /* Pods-DMLPhotoBrowser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DMLPhotoBrowser_Example-dummy.m"; sourceTree = "<group>"; };
-		A6F178FF5F66DF3D052B938A16A50A7D /* DMLPhotoBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DMLPhotoBrowser.modulemap; sourceTree = "<group>"; };
+		A6F178FF5F66DF3D052B938A16A50A7D /* DMLPhotoBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DMLPhotoBrowser.modulemap; sourceTree = "<group>"; };
 		B32CABA6BE92DE72A1090E4AFCD8877A /* Pods-DMLPhotoBrowser_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DMLPhotoBrowser_Tests-dummy.m"; sourceTree = "<group>"; };
-		B3A40BFA9193C35FB498177B6138E07E /* Pods_DMLPhotoBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DMLPhotoBrowser_Tests.framework; path = "Pods-DMLPhotoBrowser_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A40BFA9193C35FB498177B6138E07E /* Pods_DMLPhotoBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMLPhotoBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FB32AAB30622D6E56E1D8052EF2BB9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA19F862E26AC610130B5D51EBCB214 /* DMLPhotoBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DMLPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
 		BDEF048CB30E3E7157DBE0836BCE5D4B /* Pods-DMLPhotoBrowser_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DMLPhotoBrowser_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C832C097D9C60741AD923C95EAF398A3 /* Pods-DMLPhotoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMLPhotoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CC8E5B5E2C9E44E27DF19AFD62FB93C4 /* Pods-DMLPhotoBrowser_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DMLPhotoBrowser_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CE0418C50AE2EE32B8FC4511BA24E55C /* Pods-DMLPhotoBrowser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DMLPhotoBrowser_Example.modulemap"; sourceTree = "<group>"; };
+		CE0418C50AE2EE32B8FC4511BA24E55C /* Pods-DMLPhotoBrowser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DMLPhotoBrowser_Example.modulemap"; sourceTree = "<group>"; };
 		DDF56D7AEAAD8E5ECB57D84BF230DFDA /* Pods-DMLPhotoBrowser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DMLPhotoBrowser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DFA0E08F77175DD306DF901EC00E7237 /* Pods_DMLPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DMLPhotoBrowser_Example.framework; path = "Pods-DMLPhotoBrowser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA0E08F77175DD306DF901EC00E7237 /* Pods_DMLPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMLPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1665E95CD4A42A86FA88A0E7EA9849C /* DMLPhotoBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DMLPhotoBrowser.xcconfig; sourceTree = "<group>"; };
 		F58530FD7E73DF671560F94DD44E2AE1 /* Pods-DMLPhotoBrowser_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DMLPhotoBrowser_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FF3F4F6331C40B1DE1E8DB6256B0DFD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -211,16 +209,13 @@
 			children = (
 				F2BB600F438986FE041272A6678735EF /* Classes */,
 			);
-			name = DMLPhotoBrowser;
 			path = DMLPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		F2BB600F438986FE041272A6678735EF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0812B4B13F1EBC75449516A66D18780F /* ReplaceMe.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -340,7 +335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2759496EFFF59B9F624845CF1E0CF040 /* DMLPhotoBrowser-dummy.m in Sources */,
-				754BC7DF4F7BFD9DA329215EB93D4BB1 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

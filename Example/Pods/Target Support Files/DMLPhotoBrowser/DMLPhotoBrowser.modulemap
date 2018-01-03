@@ -1,6 +1,0 @@
-framework module DMLPhotoBrowser {
-  umbrella header "DMLPhotoBrowser-umbrella.h"
-
-  export *
-  module * { export * }
-}

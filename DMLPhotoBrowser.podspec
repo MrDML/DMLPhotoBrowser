@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DMLPhotoBrowser'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'DMLPhotoBrowser.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-https://github.com/MrDML/DMLPhotoBrowser.
+The image browser supports both local and network.
                        DESC
 
   s.homepage         = 'https://github.com/MrDML/DMLPhotoBrowser'
