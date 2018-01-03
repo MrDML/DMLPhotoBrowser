@@ -1,8 +1,8 @@
 {
   "name": "DMLPhotoBrowser",
-  "version": "0.1.0",
-  "summary": "A short description of DMLPhotoBrowser.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.4",
+  "summary": "DMLPhotoBrowser.",
+  "description": "The image browser supports both local and network.",
   "homepage": "https://github.com/MrDML/DMLPhotoBrowser",
   "license": {
     "type": "MIT",
@@ -13,10 +13,18 @@
   },
   "source": {
     "git": "https://github.com/MrDML/DMLPhotoBrowser.git",
-    "tag": "0.1.0"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DMLPhotoBrowser/Classes/**/*"
+  "source_files": "DMLPhotoBrowser/Classes/**/*",
+  "dependencies": {
+    "FLAnimatedImage": [
+      "~> 1.0.12"
+    ],
+    "SDWebImage": [
+      "~> 4.1.0"
+    ]
+  }
 }

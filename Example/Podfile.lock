@@ -1,5 +1,11 @@
 PODS:
-  - DMLPhotoBrowser (0.1.0)
+  - DMLPhotoBrowser (0.1.4):
+    - FLAnimatedImage (~> 1.0.12)
+    - SDWebImage (~> 4.1.0)
+  - FLAnimatedImage (1.0.12)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
 
 DEPENDENCIES:
   - DMLPhotoBrowser (from `../`)
@@ -9,8 +15,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DMLPhotoBrowser: da256f3f55fc2c1ea1a69592f93d6e3905805ce2
+  DMLPhotoBrowser: 0319ed6abf8c23b0c731a47d151fe1300654b7de
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
 
 PODFILE CHECKSUM: 1524f75876157c0577d3b89c2367393bb58fd72f
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
