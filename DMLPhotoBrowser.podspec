@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DMLPhotoBrowser'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'DMLPhotoBrowser.'
 
 # This description is used to generate tags and improve search results.
@@ -37,7 +37,7 @@ The image browser supports both local and network.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.frameworks = 'UIKit'
+  #  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
     s.dependency 'FLAnimatedImage', '~> 1.0.12'
     s.dependency 'SDWebImage', '~> 4.1.0'

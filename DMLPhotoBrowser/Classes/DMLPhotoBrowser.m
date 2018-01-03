@@ -9,7 +9,6 @@
 #import "DMLPhotoBrowser.h"
 #import "DMLPhotoItem.h"
 #import "DMLPhotoCell.h"
-#import "DMLPhotoImageView.h"
 #import <Photos/Photos.h>
 #define  kUIScreen_Width  [UIScreen mainScreen].bounds.size.width
 #define  kUIScreen_Height [UIScreen mainScreen].bounds.size.height
@@ -137,7 +136,7 @@
     }
     
     CGRect currentRect = [photoItem.sourceView convertRect:photoItem.sourceView.bounds toView:self.window];
-    DMLPhotoImageView *tempImageView = [[DMLPhotoImageView alloc] init];
+    UIImageView *tempImageView = [[UIImageView alloc] init];
     tempImageView.image = photoItem.thumbImage;
     tempImageView.frame = currentRect;
     [self.window addSubview:tempImageView];
@@ -426,7 +425,7 @@
      [self handlePaRecognizernBegin];
     if (photoItem.sourceView != nil) {
         // 获取当前的视图
-        DMLPhotoImageView *tempImageView = self.selectPhotoScrollView.imageView;
+        UIImageView *tempImageView = self.selectPhotoScrollView.imageView;
         photoItem.sourceView.alpha = 0;
         CGRect currentRect = [photoItem.sourceView.superview convertRect:photoItem.sourceView.frame toView:self.window];
         [UIView animateWithDuration:0.5 animations:^{

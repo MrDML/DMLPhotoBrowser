@@ -7,9 +7,18 @@
 //
 
 #import <FLAnimatedImage/FLAnimatedImage.h>
+#include "FLAnimatedImageView.h"
+#include "SDWebImageManager.h"
 
-#import "FLAnimatedImageView.h"
-#import "SDWebImageManager.h"
+
+
+
+
+//@class FLAnimatedImageView;
+//@class SDWebImageManager;
+
+
+
 
 @interface FLAnimatedImageView (SD_WebCache)
 

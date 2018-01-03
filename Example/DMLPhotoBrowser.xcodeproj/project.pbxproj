@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		38FDCFCC3F32F57AC2D05BE6 /* Pods_DMLPhotoBrowser_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA6FD09D04D49FD706AA1D9 /* Pods_DMLPhotoBrowser_Tests.framework */; };
 		44ED30FA08EF872C92C64075 /* Pods_DMLPhotoBrowser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3768379FBA57BEB0B18F5E /* Pods_DMLPhotoBrowser_Example.framework */; };
+		486A002A1FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 486A00291FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		082DDCE1FDFFA86AAF8E3EE8 /* Pods-DMLPhotoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLPhotoBrowser_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMLPhotoBrowser_Tests/Pods-DMLPhotoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3A3768379FBA57BEB0B18F5E /* Pods_DMLPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMLPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		486A00281FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImageView+SD_WebCache.h"; sourceTree = "<group>"; };
+		486A00291FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImageView+SD_WebCache.m"; sourceTree = "<group>"; };
 		4FA6FD09D04D49FD706AA1D9 /* Pods_DMLPhotoBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMLPhotoBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* DMLPhotoBrowser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMLPhotoBrowser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,9 +66,9 @@
 		7F2CC373F453E76EFE733C23 /* Pods-DMLPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLPhotoBrowser_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMLPhotoBrowser_Example/Pods-DMLPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8520011825928588DA2AE002 /* Pods-DMLPhotoBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLPhotoBrowser_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMLPhotoBrowser_Tests/Pods-DMLPhotoBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF8966E0C3D8524041A5F366 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C6166D00D86964F6E8B34F25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		CB3075A265D4E2A4DC568EA5 /* DMLPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DMLPhotoBrowser.podspec; path = ../DMLPhotoBrowser.podspec; sourceTree = "<group>"; };
+		AF8966E0C3D8524041A5F366 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C6166D00D86964F6E8B34F25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CB3075A265D4E2A4DC568EA5 /* DMLPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DMLPhotoBrowser.podspec; path = ../DMLPhotoBrowser.podspec; sourceTree = "<group>"; };
 		F97BD459E30DD610F5612CD8 /* Pods-DMLPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLPhotoBrowser_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMLPhotoBrowser_Example/Pods-DMLPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		486A00271FFCA2BD00B86929 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				486A00281FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.h */,
+				486A00291FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 		6003F593195388D20070C39A /* Example for DMLPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				486A00271FFCA2BD00B86929 /* Category */,
 				6003F59C195388D20070C39A /* DMLAppDelegate.h */,
 				6003F59D195388D20070C39A /* DMLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -409,6 +422,7 @@
 			files = (
 				6003F59E195388D20070C39A /* DMLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DMLViewController.m in Sources */,
+				486A002A1FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +551,7 @@
 			baseConfigurationReference = 7F2CC373F453E76EFE733C23 /* Pods-DMLPhotoBrowser_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DMLPhotoBrowser/DMLPhotoBrowser-Prefix.pch";
 				INFOPLIST_FILE = "DMLPhotoBrowser/DMLPhotoBrowser-Info.plist";
@@ -552,6 +567,7 @@
 			baseConfigurationReference = F97BD459E30DD610F5612CD8 /* Pods-DMLPhotoBrowser_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DMLPhotoBrowser/DMLPhotoBrowser-Prefix.pch";
 				INFOPLIST_FILE = "DMLPhotoBrowser/DMLPhotoBrowser-Info.plist";

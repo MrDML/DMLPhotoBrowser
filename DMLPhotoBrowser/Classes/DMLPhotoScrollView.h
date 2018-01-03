@@ -7,18 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DMLPhotoImageView.h"
+
 #import "DMLPhotoItem.h"
 #import "DMLProgressShapeLayer.h"
-#import "UIImageView+WebCache.h"
-#import "UIView+WebCache.h"
-#import "SDWebImageManager.h"
 
+//@class FLAnimatedImageView;
 typedef void(^progressBlock)(NSInteger receivedSize, NSInteger expectedSize, NSURL * targetURL);
 typedef void(^completedBlock)(UIImage *image,  NSURL *imageURL);
 
 @interface DMLPhotoScrollView : UIScrollView
-@property (nonatomic, strong)DMLPhotoImageView *imageView;
+@property (nonatomic, strong)UIImageView *imageView;
 @property (nonatomic, strong)DMLPhotoItem *photoItem;
 @property (nonatomic, strong)DMLProgressShapeLayer *progressLayer;
 @property (nonatomic, copy) progressBlock progressBlock;

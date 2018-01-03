@@ -15,6 +15,8 @@
 #import "FLAnimatedImage.h"
 #import "UIImageView+WebCache.h"
 #import "NSData+ImageContentType.h"
+#import "FLAnimatedImageView.h"
+#import "SDWebImageManager.h"
 
 @implementation FLAnimatedImageView (SD_WebCache)
 - (void)sd_setImageWithURL:(nullable NSURL *)url {

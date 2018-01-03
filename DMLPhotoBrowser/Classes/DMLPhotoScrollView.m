@@ -7,7 +7,10 @@
 //
 
 #import "DMLPhotoScrollView.h"
-
+#import "UIImageView+WebCache.h"
+#import "UIView+WebCache.h"
+#import "SDWebImageManager.h"
+#import "FLAnimatedImageView.h"
 
 
 const CGFloat kDMLhotoViewPadding = 10;
@@ -38,15 +41,14 @@ const CGFloat kDMLhotoViewMaxScale = 3;
                 // Fallback on earlier versions
             }
         }
-        
-        _imageView = [[DMLPhotoImageView alloc] init];
-        _imageView.backgroundColor = [UIColor blackColor];
-        _imageView.contentMode = UIViewContentModeScaleAspectFill;
-        _imageView.clipsToBounds = YES;
-        [self addSubview:_imageView];
+        FLAnimatedImageView *imageViewTemp = [[FLAnimatedImageView alloc] init];
+        imageViewTemp.backgroundColor = [UIColor blackColor];
+        imageViewTemp.contentMode = UIViewContentModeScaleAspectFill;
+        imageViewTemp.clipsToBounds = YES;
+        [self addSubview:imageViewTemp];
         [self adjustImageViewSize];
+        self.imageView = imageViewTemp;
         
-     
     }
     return self;
 }
