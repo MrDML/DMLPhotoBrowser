@@ -19,7 +19,7 @@ DMLPhotoBrowser is available through [CocoaPods](http://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'DMLPhotoBrowser'
+pod 'DMLPhotoBrowser', '~> 0.1.6'
 ```
 
 ## Use
