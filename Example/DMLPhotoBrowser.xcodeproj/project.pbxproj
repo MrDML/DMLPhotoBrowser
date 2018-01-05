@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38FDCFCC3F32F57AC2D05BE6 /* Pods_DMLPhotoBrowser_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA6FD09D04D49FD706AA1D9 /* Pods_DMLPhotoBrowser_Tests.framework */; };
-		44ED30FA08EF872C92C64075 /* Pods_DMLPhotoBrowser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3768379FBA57BEB0B18F5E /* Pods_DMLPhotoBrowser_Example.framework */; };
+		34617FB7857F9D1F89E432DF /* libPods-DMLPhotoBrowser_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8904AEE7817EC094E1184FC2 /* libPods-DMLPhotoBrowser_Example.a */; };
 		486A002A1FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 486A00291FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m */; };
 		486A00321FFCA86A00B86929 /* LocalShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486A002D1FFCA86A00B86929 /* LocalShowViewController.m */; };
 		486A00331FFCA86A00B86929 /* NetShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486A002F1FFCA86A00B86929 /* NetShowViewController.m */; };
@@ -41,8 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		082DDCE1FDFFA86AAF8E3EE8 /* Pods-DMLPhotoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLPhotoBrowser_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMLPhotoBrowser_Tests/Pods-DMLPhotoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3A3768379FBA57BEB0B18F5E /* Pods_DMLPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMLPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		486A00281FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImageView+SD_WebCache.h"; sourceTree = "<group>"; };
 		486A00291FFCA2BD00B86929 /* FLAnimatedImageView+SD_WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImageView+SD_WebCache.m"; sourceTree = "<group>"; };
 		486A002C1FFCA86A00B86929 /* LocalShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalShowViewController.h; sourceTree = "<group>"; };
@@ -73,8 +70,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F2CC373F453E76EFE733C23 /* Pods-DMLPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLPhotoBrowser_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMLPhotoBrowser_Example/Pods-DMLPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8520011825928588DA2AE002 /* Pods-DMLPhotoBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLPhotoBrowser_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMLPhotoBrowser_Tests/Pods-DMLPhotoBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8904AEE7817EC094E1184FC2 /* libPods-DMLPhotoBrowser_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMLPhotoBrowser_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8966E0C3D8524041A5F366 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C6166D00D86964F6E8B34F25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CB3075A265D4E2A4DC568EA5 /* DMLPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DMLPhotoBrowser.podspec; path = ../DMLPhotoBrowser.podspec; sourceTree = "<group>"; };
@@ -89,7 +86,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				44ED30FA08EF872C92C64075 /* Pods_DMLPhotoBrowser_Example.framework in Frameworks */,
+				34617FB7857F9D1F89E432DF /* libPods-DMLPhotoBrowser_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +97,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				38FDCFCC3F32F57AC2D05BE6 /* Pods_DMLPhotoBrowser_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +153,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				3A3768379FBA57BEB0B18F5E /* Pods_DMLPhotoBrowser_Example.framework */,
 				4FA6FD09D04D49FD706AA1D9 /* Pods_DMLPhotoBrowser_Tests.framework */,
+				8904AEE7817EC094E1184FC2 /* libPods-DMLPhotoBrowser_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,8 +222,6 @@
 			children = (
 				7F2CC373F453E76EFE733C23 /* Pods-DMLPhotoBrowser_Example.debug.xcconfig */,
 				F97BD459E30DD610F5612CD8 /* Pods-DMLPhotoBrowser_Example.release.xcconfig */,
-				8520011825928588DA2AE002 /* Pods-DMLPhotoBrowser_Tests.debug.xcconfig */,
-				082DDCE1FDFFA86AAF8E3EE8 /* Pods-DMLPhotoBrowser_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -259,12 +253,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DMLPhotoBrowser_Tests" */;
 			buildPhases = (
-				24FEC6965E6ABCC29EE88957 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				941D70B94A9BF9F09DCB8B1E /* [CP] Embed Pods Frameworks */,
-				3083F472B3C66CF9EE968E7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,39 +339,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMLPhotoBrowser_Example/Pods-DMLPhotoBrowser_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		24FEC6965E6ABCC29EE88957 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DMLPhotoBrowser_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3083F472B3C66CF9EE968E7E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMLPhotoBrowser_Tests/Pods-DMLPhotoBrowser_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		564ED710327D26386249B70C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,21 +377,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMLPhotoBrowser_Example/Pods-DMLPhotoBrowser_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		941D70B94A9BF9F09DCB8B1E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMLPhotoBrowser_Tests/Pods-DMLPhotoBrowser_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -606,7 +549,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8520011825928588DA2AE002 /* Pods-DMLPhotoBrowser_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -630,7 +572,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 082DDCE1FDFFA86AAF8E3EE8 /* Pods-DMLPhotoBrowser_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
