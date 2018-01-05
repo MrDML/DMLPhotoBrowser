@@ -23,7 +23,7 @@ pod 'DMLPhotoBrowser', '~> 0.1.6'
 ```
 
 ## Use
-*注意此框架依赖 FLAnimatedImage和SDWebImage，下面是具体如何使用*
+*注意此框架依赖 FLAnimatedImage和SDWebImage，下面是具体如何使用(请参考demo，欢迎Issues)*
 <p>本地/相册图片浏览</p>
 <pre> 
     NSMutableArray *photoItems = [NSMutableArray array];
